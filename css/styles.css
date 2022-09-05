@@ -401,10 +401,6 @@ body {
   margin-top: 0;
   gap: 30px;
 }
-.portfolio .portfolio-title-explanation {
-  margin-top: 4px;
-  margin-bottom: 20px;
-}
 .portfolio-title {
   padding-top: 0;
   padding-bottom: 0;
@@ -436,13 +432,12 @@ h3 {
   margin: 0;
 }
 .item-div {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: none;
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 .main-section {
   padding-top: 94px;
