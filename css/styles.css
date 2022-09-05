@@ -69,6 +69,20 @@ body {
   display: flex;
   margin-left: auto;
 }
+.adress-nav .icon-mail {
+  height: 12px;
+  width: 16px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.adress-nav .icon-phone {
+  height: 16px;
+  width: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
 .adress-nav .item + .item {
   margin-left: 50px;
 }
@@ -93,10 +107,8 @@ body {
   align-items: center;
 }
 .hero {
-  background-color: var(--background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
+  background-color: var(--background-color);
 }
 .hero-title {
   color: var(--hero-text-color);
@@ -123,6 +135,23 @@ body {
   letter-spacing: 0.06em;
   border: 0;
   border-radius: 4px;
+}
+.overlay-hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-people.jpg);
 }
 .section-title {
   color: var(--title-text-color);
@@ -151,6 +180,27 @@ body {
   list-style: none;
   display: flex;
   padding-left: 0;
+}
+.features-list .item::before {
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(245, 244, 250, 1);
+}
+.features-list .item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+.features-list .item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+.features-list .item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+.features-list .item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
 }
 .features-list .item + .item {
   margin-left: 30px;
@@ -258,6 +308,16 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   margin-top: 0;
+}
+.icon-social {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  height: 20px;
+  width: 20px;
+  margin-left: 32px;
+  margin-bottom: 30px;
 }
 .adress {
   background-color: var(--background-color);
