@@ -74,27 +74,13 @@ body {
   height: 12px;
   width: 16px;
   margin-right: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: center;
-  background-size: cover;
-  display: inline-flex;
-  content: "";
-  justify-content: center;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 .adress-nav .icon-phone {
   height: 16px;
   width: 10px;
   margin-right: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  content: "";
-  align-items: center;
-  background-size: cover;
-  display: inline-flex;
-  justify-content: center;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 .adress-nav .item + .item {
   margin-left: 50px;
@@ -128,14 +114,9 @@ body {
 .adress-nav .email:focus {
   color: var(--accent-text-color);
 }
-.adress-nav .item:hover,
-.adress-nav .item:focus {
-  fill: var(--accent-text-color);
-}
 .adress-nav .phone:hover,
 .adress-nav .phone:focus {
   color: var(--accent-text-color);
-  fill: var(--accent-text-color);
 }
 .main-nav {
   display: flex;
@@ -299,6 +280,7 @@ body {
 .section-people-list {
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: rgb(245, 244, 250);
 }
 .section-people-list .container {
   max-width: 1200px;
@@ -360,8 +342,10 @@ body {
   width: 44px;
   height: 44px;
 }
-.icon-social-item:hover {
+.icon-social-item:hover,
+.icon-social-item:focus {
   background-color: var(--accent-text-color);
+  color: var(--hero-text-color);
 }
 .icon-social {
   display: block;
@@ -370,13 +354,12 @@ body {
   content: "";
   height: 22px;
   width: 22px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
-.social-icons:hover {
-  fill: var(--hero-text-color);
-}
-.socials:hover {
-  fill: var(--hero-text-color);
+.socials {
+  text-decoration: none;
+  color: currentColor;
+  cursor: pointer;
 }
 .icon-social-item {
   width: 100%;
@@ -617,15 +600,16 @@ h3 {
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
 }
-.company-list .company-item:hover {
-  fill: var(--accent-text-color);
+.company-list .company-item:hover,
+.company-list .company-item:focus {
+  color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
-.company-item .item:hover {
-  fill: var(--accent-text-color);
-}
 .company-item .item {
-  fill: rgb(175, 177, 184);
+  fill: currentColor;
+}
+.company-item .company-clients {
+  color: currentColor;
 }
 .company-item:nth-child(1) .item {
   width: 41px;
@@ -678,14 +662,16 @@ h3 {
 .join .icon-social-item {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.join .icon-social-item:hover {
+.join .icon-social-item:hover,
+.join .icon-social-item:focus {
   background-color: var(--accent-text-color);
 }
 .portfolio-photo {
   display: block;
   text-decoration: none;
 }
-.portfolio-photo:hover {
+.portfolio-photo:hover,
+.portfolio-photo:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
