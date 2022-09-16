@@ -172,8 +172,6 @@ svg path {
   border: 0;
   border-radius: 4px;
 }
-.overlay-hero {
-}
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -353,8 +351,9 @@ svg path {
 .icon-social-item:hover,
 .icon-social-item:focus {
   background-color: var(--accent-text-color);
-  color: var(--hero-text-color);
+  fill: var(--hero-text-color);
 }
+
 .icon-social {
   display: block;
   background-repeat: no-repeat;
@@ -362,7 +361,8 @@ svg path {
   content: "";
   height: 22px;
   width: 22px;
-  fill: rgb(175, 177, 184);
+  color: rgb(175, 177, 184);
+  fill: currentColor;
 }
 .socials {
   text-decoration: none;
@@ -628,6 +628,7 @@ h3 {
 }
 .company-item .company-clients {
   color: rgb(175, 177, 184);
+  color: currentColor;
 }
 .company-item:nth-child(1) .item {
   width: 41px;
